@@ -1,7 +1,9 @@
 # RSA-Cryptography
+
 A naive implementation of the RSA algorithm for the course CSE-4743 Cryptography and Network Security at Islamic University of Technology.
 
 # Example Usage
+
 `python main.py -s -v -w -e "Hello, how are you doing today?"`
 
 Generated new pair of public and private keys.\
@@ -17,6 +19,7 @@ Private Key pair: d = 1705028247435, n = 3446597376811\
 Decrypted Plaintext: Hello, how are you doing today?
 
 # Arguments
+
 ## Encryption and Decryption:
 
 -e, --encrypt &lt;string>: Encrypts the given string.\
@@ -27,9 +30,9 @@ Decrypted Plaintext: Hello, how are you doing today?
 ## Key Management:
 
 -l, --load: Reads public and private keys from their respective files.\
--s, --save: Stores public and private keys into their respective files.\
+-s, --save: Stores public and private keys into their respective files.
 
 ## Output and Logging:
 
 -v, --verbose: Displays detailed output, including key values.\
--w, --write: Writes the output message to a file named "message.txt".\
+-w, --write: Writes the output message to a file named "message.txt".
