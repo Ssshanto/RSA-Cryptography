@@ -58,9 +58,3 @@ if __name__ == "__main__":
     if args.save:
         write_keys(public_key, private_key)
         print("Wrote keys to 'private_keys.txt' and 'public_keys.txt'")
-
-
-"""
-Example Commands:
-python main.py -l -v -df
-"""
