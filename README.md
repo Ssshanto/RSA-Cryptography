@@ -22,17 +22,17 @@ Decrypted Plaintext: Hello, how are you doing today?
 
 ## Encryption and Decryption:
 
--e, --encrypt &lt;string>: Encrypts the given string.\
--d, --decrypt &lt;string>: Decrypts the given string.\
--ef, --encrypt_file: Encrypts the string content from a file named "message.txt".\
--df, --decrypt_file: Decrypts the string content from a file named "message.txt".\
+`-e`, `--encrypt` &lt;string>: Encrypts the given string.\
+`-d`, `--decrypt` &lt;string>: Decrypts the given string.\
+`-ef`, `--encrypt_file`: Encrypts the string content from a file named "message.txt".\
+`-df`, `--decrypt_file`: Decrypts the string content from a file named "message.txt".
 
 ## Key Management:
 
--l, --load: Reads public and private keys from their respective files.\
--s, --save: Stores public and private keys into their respective files.
+`-l`, `--load`: Reads public and private keys from their respective files.\
+`-s`, `--save`: Stores public and private keys into their respective files.
 
 ## Output and Logging:
 
--v, --verbose: Displays detailed output, including key values.\
--w, --write: Writes the output message to a file named "message.txt".
+`-v`, `--verbose`: Displays detailed output, including key values.\
+`-w`, `--write`: Writes the output message to a file named "message.txt".
