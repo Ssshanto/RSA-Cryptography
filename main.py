@@ -40,12 +40,12 @@ if __name__ == "__main__":
             message = message_file.readline()
 
     if args.decrypt or args.decrypt_file:
-        print(f"message is {message}")
         plaintext = decrypt(message, private_key)
         print(f"Decrypted Plaintext: {plaintext}")
         if args.write:
             with open('message.txt', 'w') as message_file:
                 message_file.write(ciphertext)
+            print("Wrote output to 'message.txt'")
     
     else:
         ciphertext = encrypt(message, public_key)
@@ -61,6 +61,5 @@ if __name__ == "__main__":
 
 """
 Example Commands:
-python main.py -s -v -w -e "Hello, how are you doing today?"
 python main.py -l -v -df
 """
