@@ -44,15 +44,20 @@ def generate_primes():
 # Saves key used in this session in their corresponding text files for subsequent encryption/decryption
 def write_keys(public_key, private_key):
     with open('public_keys.txt', 'w') as public_file:
-        public_file.writelines(map(str, public_key) + ['\n'])
+        public_file.write(str(public_key[0]) + '\n')
+        public_file.write(str(public_key[1]) + '\n')
 
     with open('private_keys.txt', 'w') as private_file:
-        private_file.writelines(map(str, private_key) + ['\n'])
+        private_file.write(str(private_key[0]) + '\n')
+        private_file.write(str(private_key[1]) + '\n')
 
 # Loads pre-existing keys from corresponding text files if they've been saved beforehand
 def load_keys():
     private_keys_path = "private_keys.txt" 
     public_keys_path = "public_keys.txt"
+
+    if not os.path.exists(public_keys_path):
+        raise ValueError("No public/private key pairs have been saved yet.")
 
     with open(public_keys_path, 'r') as public_keys_file:
         e = int(public_keys_file.readline())
