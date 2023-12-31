@@ -1,6 +1,6 @@
 # RSA-Specific Ignores
-"private_keys.txt"
-"public_keys.txt"
+private_keys.txt
+public_keys.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

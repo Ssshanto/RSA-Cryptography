@@ -38,6 +38,7 @@ if __name__ == "__main__":
             raise ValueError("'message.txt' file does not exist.")
         with open('message.txt', 'r') as message_file:
             message = message_file.readline()
+            print("Loaded message from 'message.txt'")
 
     if args.decrypt or args.decrypt_file:
         plaintext = decrypt(message, private_key)
